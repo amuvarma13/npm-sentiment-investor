@@ -45,6 +45,7 @@ async function historical(symbol, metric){
 async function sort(limit, metric){
     let key = sentiment.key;
     let token = sentiment.token;
+    console.log(sentiment)
 
     var options = {
         uri: `https://sentimentinvestor.com/api/v3/sort?limit=${limit}&metric=${metric}&token=${token}&key=${key}`,
@@ -64,7 +65,7 @@ let SentimentExportObject = {
     quote,
     historical,
     sort,
-    version:"1.0.6"
+    version:"1.0.9"
 
 
 }
